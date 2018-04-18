@@ -6,7 +6,7 @@ bool perfecto( int n){
                 cont=cont+i;
             }
         }
-        if (contador==n){
+        if (cont==n){
               return true;
         }else{
             return false;
@@ -25,6 +25,11 @@ bool esprim(int n){
               return false;
         }
 }
+ for( int i=1; i<=n;i++)
+        if(esprim(i)){
+                cout<<i<< endl;
+         }
+ }
 
 int potencia(int base,int exponente){
       if(exponente==0)
