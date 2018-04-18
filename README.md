@@ -1,12 +1,12 @@
 # resolver
 bool perfecto( int n){
         int cont=0;
-       for(int i=1;1<x;i++){
-            if (x%i==O){
+       for(int i=1;1<n;i++){
+            if (n%i==O){
                 cont=cont+i;
             }
         }
-        if (contador==x){
+        if (contador==n){
               return true;
         }else{
             return false;
@@ -32,6 +32,9 @@ int potencia(int base,int exponente){
        else
          base=base*exponente(base,exponente-1)
         return base;
+        
+        
+        
 void intercambiar(int a=1, int b=2)
         a=a-b;
         b=a-b;
