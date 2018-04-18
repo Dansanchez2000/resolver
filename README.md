@@ -37,16 +37,14 @@ int potencia(int base,int exponente){
        else
          base=base*exponente(base,exponente-1)
         return base;
-        
-        
+ cout<<"la potencia es:"<< potencia(2,3)    
         
 void intercambiar(int a=1, int b=2)
-        a=a-b;
+        a=a+b;
         b=a-b;
         c=a-b;
         cout<<a<<endl;
         cout<<b<<endl;
-        
-        
+        return 0;
         
         
