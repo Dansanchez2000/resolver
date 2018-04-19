@@ -1,15 +1,22 @@
 # resolver
-bool perfecto( int n){
-        int cont=0;
-       for(int i=1;1<n;i++){
-            if (n%i==O){
-                cont=cont+i;
-            }
-        }
-        if (cont==n){
-              return true;
-        }else{
-            return false;
+bool Perfecto(int n){
+  int contador=0;
+  for(int i=1; i<n; i++){
+    if(n%i==0){
+      contador=contador+i;
+    }
+  }
+  if (contador==n){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+int main(){
+  cout<<Perfecto(6)<<endl;
+  return 0;
+}
 
 bool esprim(int n){
         if(n<1)
@@ -46,5 +53,11 @@ void intercambiar(int a=1, int b=2)
         cout<<a<<endl;
         cout<<b<<endl;
         return 0;
-        
+void intercambiar(int a=1, int b=2)
+        a=a^b;
+        b=a^b;
+        c=a^b;
+        cout<<a<<endl;
+        cout<<b<<endl;
+        return 0;      
         
