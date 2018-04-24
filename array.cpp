@@ -9,7 +9,7 @@ int tamano(char arr[]){
     return a;
     }
 
-void copystr(char arr1[],char arr2[]){
+void imprimirstr(char arr1[],char arr2[]){
     for(int i=0;arr1[i]!='\0';i++){
         arr1[i]=arr2[i];
         cout<<arr1[i];
@@ -33,7 +33,7 @@ int main(){
  char cadena[] = "hola";
  char cadena_1[10] = " ";
  char cadena_2[] = "Daniel";
- copiarstr(cadena_1,cadena_2);
+ imprimirstr(cadena_1,cadena_2);
  cout<<tamaho(cadena);
  concatenarstr(cadena,cadena_2);
  return 0 ;
