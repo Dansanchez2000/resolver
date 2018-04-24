@@ -1,10 +1,7 @@
 #include <iostream>
 
 using namespace std;
-
-int main()
-{
- int tamano(char arr[]){
+int tamano(char arr[]){
     int a=0;
     for(int i=0;arr[i]!='\0';i++){
         a++;
@@ -30,5 +27,15 @@ void concstr(char arr1[],char arr2[]){
     for(int i=0;arr1[i]!='\0';i++){
         cout<<arr1[i];
     }
+}
+
+int main(){
+ char cadena[] = "hola";
+ char cadena_1[10] = " ";
+ char cadena_2[] = "Daniel";
+ copiarstr(cadena_1,cadena_2);
+ cout<<tamaho(cadena);
+ concatenarstr(cadena,cadena_2);
+ return 0 ;
 }
 }
