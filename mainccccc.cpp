@@ -40,3 +40,56 @@ int main()
     cout<<cursos[5].nombre<<endl;
     cout<<cursos[5].promedio<<endl;
 }
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int arr[]={1,2};
+
+    arreglodinamicoint a(2,arr);
+    a.insertaratras(5);
+    a.mostrar();
+}
+
+
+#ifndef ARREGLODINAMICOINT_H
+#define ARREGLODINAMICOINT_H
+
+
+class arreglodinamicoint
+{
+    int size;
+    int *data;
+
+    public:
+        arreglodinamicoint(int size,int arr[]);
+        {
+            this>size=size;
+            this>data=new int[size];
+            for (i=0;i<size;++i){
+                data[i]=arr[i]
+            }
+        void insertaratras(int elem){
+            int nuevo=size+1;
+            this>new int [nuevo];
+            size=nuevo;
+            for(int=i;i<=size-1;i++){
+                nuevo[i]=data[i];
+            }
+            nuevo[size]=elem
+        }
+       arreglodinamicoint(){
+       delete[] data;
+       }
+       data=nuevo;
+       }
+        void mostrar(){
+            for i=0 hasta size-1
+                cout<< date[1]<<" ";
+        }
+};
+
+#endif // ARREGLODINAMICOINT_H
